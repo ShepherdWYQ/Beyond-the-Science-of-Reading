@@ -2,8 +2,8 @@
 
 source "https://rubygems.org"
 
-# GitHub Pages 兼容的 Jekyll 版本
-gem "jekyll", "~> 4.3"
+# 使用稳定的 Jekyll 版本
+gem "jekyll", "~> 4.2"
 gem "minima", "~> 2.5"
 gem "jekyll-feed", "~> 0.12"
 gem "jekyll-sitemap", "~> 1.4"

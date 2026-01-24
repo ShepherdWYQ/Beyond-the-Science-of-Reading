@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Beyond the Science of Reading
+permalink: /
 ---
 
 # Beyond the Science of Reading: Connecting Literacy Instruction to the Science of Learning
