@@ -12,7 +12,12 @@ plugins:
   - jekyll-seo-tag
 
 # Site settings
-url: https://your-username.github.io
+# 如果使用用户名.github.io 作为域名，设置如下：
+# url: https://ShepherdWYQ.github.io
+# baseurl: ""
+
+# 如果使用项目名称作为子路径，设置如下：
+url: https://ShepherdWYQ.github.io
 baseurl: /Beyond-the-Science-of-Reading
 
 # Build settings

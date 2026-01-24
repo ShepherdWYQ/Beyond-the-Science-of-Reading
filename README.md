@@ -58,9 +58,11 @@ Beyond-the-Science-of-Reading/
 ├── progress.md                  # 翻译进度追踪
 ├── glossary.md                  # 术语对照表
 ├── PROJECT_STRUCTURE.md         # 项目结构说明
+├── QUICK_START.md               # 快速发布指南
+├── DEPLOYMENT.md                # 详细发布指南
 ├── _config.yml                  # Jekyll 配置文件
 ├── Gemfile                      # Ruby 依赖管理
-├── CNAME                        # 自定义域名配置
+├── index.md                     # 网站首页
 ├── chapters/                    # 翻译后的章节目录
 │   ├── README.md                # 章节说明
 │   └── ...                      # 其他章节和附录
@@ -80,9 +82,13 @@ Beyond-the-Science-of-Reading/
 
 本项目可部署到 GitHub Pages，可以在线阅读。
 
+**快速发布**：查看 [QUICK_START.md](QUICK_START.md) 了解如何在 5 分钟内发布网站。
+
+**详细指南**：查看 [DEPLOYMENT.md](DEPLOYMENT.md) 了解所有发布选项。
+
 ## 📊 翻译进度
 
-查看详细翻译进度请参考 progress.md
+查看详细翻译进度请参考 [progress.md](progress.md)
 
 ## 🤝 如何贡献
 
@@ -94,14 +100,14 @@ Beyond-the-Science-of-Reading/
 4. **推送分支** (`git push origin feature/translate-chapter-xx`)
 5. **创建 Pull Request**
 
-详细贡献指南请参阅 CONTRIBUTING.md
+详细贡献指南请参阅 [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## 📝 翻译规范
 
-在开始翻译前，请仔细阅读 translation-guide.md，主要规范包括：
+在开始翻译前，请仔细阅读 [translation-guide.md](translation-guide.md)，主要规范包括：
 
 * **保持原文结构**：段落、标题层级保持一致
-* **术语统一**：参考 glossary.md 中的术语对照表
+* **术语统一**：参考 [glossary.md](glossary.md) 中的术语对照表
 * **代码保持原样**：代码示例、命令行等保持英文
 * **图片路径**：确保图片引用路径正确指向 `images/` 目录
 * **格式规范**：遵循 Markdown 格式规范
@@ -110,12 +116,31 @@ Beyond-the-Science-of-Reading/
 ## 📚 相关资源
 
 * [ASCD 官方页面](https://ascd.org/books/beyond-the-science-of-reading) - 原书官方信息
+* [作者 Natalie Wexler 的个人网站](https://nataliewexler.com/)
 * 术语对照表 - 统一的教育术语翻译
 * 翻译指南 - 详细的翻译规范和注意事项
 * 项目结构说明 - 项目文件组织说明
 * GitBook 目录 - 在线书籍的完整目录结构
 * Jekyll 配置 - GitHub Pages 网站配置
 * 翻译进度追踪 - 实时更新翻译状态
+
+## 🚀 快速开始
+
+### 本地开发
+
+```bash
+# 安装依赖
+bundle install
+
+# 启动本地服务器
+bundle exec jekyll serve
+
+# 访问 http://localhost:4000 查看网站
+```
+
+### 发布网站
+
+查看 [QUICK_START.md](QUICK_START.md) 了解快速发布步骤。
 
 ## 📄 许可证
 
