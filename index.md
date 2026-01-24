@@ -1,11 +1,8 @@
 ---
 layout: default
-title: Beyond the Science of Reading
+title: Beyond the Science of Reading: Connecting Literacy Instruction to the Science of Learning
 permalink: /
 ---
-
-# Beyond the Science of Reading: Connecting Literacy Instruction to the Science of Learning
-
 ## 欢迎
 
 欢迎访问《Beyond the Science of Reading: Connecting Literacy Instruction to the Science of Learning》中文翻译项目网站。
@@ -63,6 +60,10 @@ Natalie Wexler 是一位教育作家，著有《The Knowledge Gap: The Hidden Ca
 ## 许可证
 
 本翻译项目遵循原书的许可证条款。翻译内容仅供学习交流使用。
+
+## 联系我们
+
+项目发起人：shepherd.wyq@gmail.com
 
 ---
 
