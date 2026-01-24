@@ -1,3 +1,9 @@
+---
+layout: default
+title: Beyond the Science of Reading
+permalink: /chapters/Beyond-the-Science-of-Reading.html
+---
+
 # Beyond the Science of Reading: Connecting Literacy Instruction to the Science of Learning
 
 ## 简介
@@ -37,15 +43,15 @@ Natalie Wexler 是一位教育作家，著有《The Knowledge Gap: The Hidden Ca
 
 ### 核心章节
 
-1. [第1章：拥抱完整的阅读科学如何让我们超越旧有辩论](Chapter%201_%20How%20Embracing%20All%20of%20the%20Science%20of%20Reading%20Can%20Get%20Us%20Past%20the%20Old%20Debates.md)
-2. [第2章：为什么阅读危机实际上是学习危机](Chapter%202_%20Why%20the%20Reading%20Crisis%20Is%20Actually%20a%20Learning%20Crisis.md)
+1. [第1章：拥抱完整的阅读科学如何让我们超越旧有辩论](Chapter-1.html)
+2. [第2章：为什么阅读危机实际上是学习危机](Chapter-2.html)
 3. （更多章节待补充...）
 
 ### 其他内容
 
-* [术语表](../glossary.md)
-* [参考文献](References.md)
-* [索引](Index.md)
+* [术语表](../glossary.html)
+* [参考文献](References.html)
+* [索引](Index.html)
 
 ## 如何使用本书
 

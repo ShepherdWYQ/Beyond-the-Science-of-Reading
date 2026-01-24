@@ -1,3 +1,9 @@
+---
+layout: default
+title: 贡献指南
+permalink: /CONTRIBUTING.html
+---
+
 # 贡献指南
 
 感谢您对本翻译项目的关注！我们欢迎任何形式的贡献。

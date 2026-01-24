@@ -34,11 +34,11 @@ Natalie Wexler 是一位教育作家，著有《The Knowledge Gap: The Hidden Ca
 
 ## 快速导航
 
-* [目录](SUMMARY.md) - 查看完整章节列表
-* [开始阅读](chapters/Beyond%20the%20Science%20of%20Reading.md) - 开始阅读翻译内容
-* [贡献指南](CONTRIBUTING.md) - 了解如何参与翻译
-* [翻译进度](progress.md) - 查看翻译进度
-* [术语表](glossary.md) - 查看术语对照表
+* [目录](SUMMARY.html) - 查看完整章节列表
+* [开始阅读](chapters/Beyond-the-Science-of-Reading.html) - 开始阅读翻译内容
+* [贡献指南](CONTRIBUTING.html) - 了解如何参与翻译
+* [翻译进度](progress.html) - 查看翻译进度
+* [术语表](glossary.html) - 查看术语对照表
 
 ## 如何使用本网站
 

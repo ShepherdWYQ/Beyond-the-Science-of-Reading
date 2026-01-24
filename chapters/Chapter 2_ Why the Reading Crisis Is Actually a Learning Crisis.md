@@ -1,3 +1,9 @@
+---
+layout: default
+title: 第2章：为什么阅读危机实际上是学习危机
+permalink: /chapters/Chapter-2.html
+---
+
 # 第2章：为什么阅读危机实际上是学习危机
 
 > **注意**：本章为示例章节，实际内容需要根据原文进行翻译。

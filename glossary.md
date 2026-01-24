@@ -1,3 +1,9 @@
+---
+layout: default
+title: 术语对照表
+permalink: /glossary.html
+---
+
 # 术语对照表
 
 本文档用于统一教育术语的翻译，确保整个翻译项目的一致性。

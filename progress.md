@@ -1,3 +1,9 @@
+---
+layout: default
+title: 翻译进度
+permalink: /progress.html
+---
+
 # 翻译进度追踪
 
 本文档用于追踪各章节的翻译进度。
