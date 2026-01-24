@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  
+  {% seo %}
+</head>
+<body>
+  <header>
+    <nav>
+      {% include navigation.html %}
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <h1>{{ page.title }}</h1>
+      {{ content }}
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. 翻译内容仅供学习交流使用。</p>
+  </footer>
+</body>
+</html>

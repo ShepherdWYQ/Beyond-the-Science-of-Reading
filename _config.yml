@@ -1,0 +1,53 @@
+# Jekyll Configuration for GitHub Pages
+
+title: Beyond the Science of Reading
+description: Beyond the Science of Reading: Connecting Literacy Instruction to the Science of Learning 中文翻译项目
+author: Beyond the Science of Reading
+
+# GitHub Pages settings
+github: [metadata]
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Site settings
+url: https://your-username.github.io
+baseurl: /Beyond-the-Science-of-Reading
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .git
+  - .gitignore
+  - README.md
+  - CONTRIBUTING.md
+  - translation-guide.md
+  - progress.md
+  - PROJECT_STRUCTURE.md
+
+# Kramdown settings
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+# Navigation
+navigation:
+  - title: 首页
+    url: /
+  - title: 目录
+    url: /SUMMARY.md
+  - title: 贡献指南
+    url: /CONTRIBUTING.md
