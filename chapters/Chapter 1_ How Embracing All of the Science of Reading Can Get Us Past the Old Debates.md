@@ -2,6 +2,7 @@
 layout: default
 title: 第1章：拥抱完整的阅读科学如何让我们超越旧有辩论
 permalink: /chapters/Chapter-1.html
+hide_title: false
 ---
 
 # 第1章：拥抱完整的阅读科学如何让我们超越旧有辩论

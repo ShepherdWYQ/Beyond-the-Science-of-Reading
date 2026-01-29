@@ -1,0 +1,41 @@
+{
+  "name": "beyond-science-reading-ebook-builder",
+  "version": "1.0.0",
+  "description": "Beyond the Science of Reading 电子书构建工具",
+  "main": "build-ebooks.js",
+  "scripts": {
+    "build": "node build-ebooks.js",
+    "build:pdf": "node build-ebooks.js pdf",
+    "build:epub": "node build-ebooks.js epub",
+    "build:mobi": "node build-ebooks.js mobi",
+    "build:all": "node build-ebooks.js all",
+    "install-deps": "npm install",
+    "setup": "npm run install-deps && npm run check-deps",
+    "check-deps": "node -e \"console.log('检查系统依赖...'); try { require('child_process').execSync('pandoc --version', {stdio: 'ignore'}); console.log('✅ Pandoc 已安装'); } catch(e) { console.log('❌ 请安装 Pandoc: brew install pandoc'); } try { require('child_process').execSync('calibre --version', {stdio: 'ignore'}); console.log('✅ Calibre 已安装'); } catch(e) { console.log('⚠️  Calibre 未安装，无法生成 MOBI 格式: brew install --cask calibre'); }\""
+  },
+  "dependencies": {
+    "fs-extra": "^11.0.0",
+    "marked": "^9.0.0",
+    "cheerio": "^1.0.0-rc.12"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "ebook",
+    "pdf",
+    "epub",
+    "mobi",
+    "pandoc",
+    "markdown",
+    "education",
+    "reading"
+  ],
+  "author": "Beyond the Science of Reading Translation Project",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShepherdWYQ/Beyond-the-Science-of-Reading.git"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

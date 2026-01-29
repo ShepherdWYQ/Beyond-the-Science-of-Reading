@@ -2,6 +2,7 @@
 layout: default
 title: 翻译进度
 permalink: /progress.html
+hide_title: false
 ---
 
 # 翻译进度追踪

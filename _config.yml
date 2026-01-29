@@ -14,13 +14,13 @@ plugins:
   - jekyll-seo-tag
 
 # Site settings
-# 如果使用用户名.github.io 作为域名，设置如下：
-# url: https://ShepherdWYQ.github.io
-# baseurl: ""
+# 部署到 translation.wangyongqing.com/beyond-reading-science
+url: https://translation.wangyongqing.com
+baseurl: /beyond-reading-science
 
-# 如果使用项目名称作为子路径，设置如下：
-url: https://ShepherdWYQ.github.io
-baseurl: /Beyond-the-Science-of-Reading
+# GitHub Pages 备用配置（如果自定义域名失效）
+# url: https://ShepherdWYQ.github.io
+# baseurl: /Beyond-the-Science-of-Reading
 
 # Build settings
 markdown: kramdown
@@ -40,14 +40,14 @@ exclude:
   - .git
   - .gitignore
   - README.md
-  - CONTRIBUTING.md
   - translation-guide.md
-  - progress.md
   - PROJECT_STRUCTURE.md
   - DEPLOYMENT.md
   - QUICK_START.md
   - TROUBLESHOOTING.md
   - FIX_404.md
+  - BUILD_FIX.md
+  - PAGE_FIX.md
 
 # Kramdown settings
 kramdown:
@@ -63,3 +63,7 @@ navigation:
     url: /SUMMARY.html
   - title: 贡献指南
     url: /CONTRIBUTING.html
+  - title: 翻译进度
+    url: /progress.html
+  - title: 术语表
+    url: /glossary.html

@@ -7,63 +7,144 @@
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       line-height: 1.6;
       color: #333;
-      max-width: 800px;
+      background-color: #f5f5f5;
+    }
+    .container {
+      max-width: 1200px;
       margin: 0 auto;
-      padding: 20px;
+      background: white;
+      min-height: 100vh;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
     header {
-      border-bottom: 2px solid #eee;
-      margin-bottom: 30px;
-      padding-bottom: 20px;
+      background: #24292e;
+      color: white;
+      padding: 20px 40px;
+      border-bottom: 3px solid #0366d6;
+    }
+    header h1 {
+      color: white;
+      font-size: 1.8em;
+      margin: 0;
+    }
+    nav {
+      margin-top: 15px;
     }
     nav ul {
       list-style: none;
       padding: 0;
       display: flex;
-      gap: 20px;
+      gap: 30px;
+      flex-wrap: wrap;
     }
     nav a {
       text-decoration: none;
-      color: #0366d6;
+      color: #c9d1d9;
+      font-size: 0.95em;
+      transition: color 0.2s;
     }
     nav a:hover {
+      color: white;
+    }
+    main {
+      padding: 40px;
+    }
+    article {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    article h1 {
+      color: #24292e;
+      font-size: 2em;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #eaecef;
+    }
+    article h2 {
+      color: #24292e;
+      font-size: 1.5em;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+    article h3 {
+      color: #24292e;
+      font-size: 1.2em;
+      margin-top: 25px;
+      margin-bottom: 12px;
+    }
+    article p {
+      margin-bottom: 15px;
+    }
+    article ul, article ol {
+      margin-bottom: 15px;
+      padding-left: 30px;
+    }
+    article li {
+      margin-bottom: 8px;
+    }
+    article a {
+      color: #0366d6;
+      text-decoration: none;
+    }
+    article a:hover {
       text-decoration: underline;
     }
-    h1 {
-      color: #24292e;
+    article blockquote {
+      border-left: 4px solid #dfe2e5;
+      padding-left: 20px;
+      margin: 20px 0;
+      color: #6a737d;
     }
     footer {
-      margin-top: 50px;
-      padding-top: 20px;
-      border-top: 1px solid #eee;
+      background: #f6f8fa;
+      padding: 30px 40px;
       text-align: center;
       color: #666;
       font-size: 0.9em;
+      border-top: 1px solid #eaecef;
+    }
+    @media (max-width: 768px) {
+      header, main, footer {
+        padding: 20px;
+      }
+      nav ul {
+        gap: 15px;
+      }
     }
   </style>
   
   {% seo %}
 </head>
 <body>
-  <header>
-    <nav>
-      {% include navigation.html %}
-    </nav>
-  </header>
+  <div class="container">
+    <header>
+      <h1><a href="/" style="color: white; text-decoration: none;">{{ site.title }}</a></h1>
+      <nav>
+        {% include navigation.html %}
+      </nav>
+    </header>
 
-  <main>
-    <article>
-      <h1>{{ page.title }}</h1>
-      {{ content }}
-    </article>
-  </main>
+    <main>
+      <article>
+        {% unless page.hide_title %}
+        <h1>{{ page.title }}</h1>
+        {% endunless %}
+        {{ content }}
+      </article>
+    </main>
 
-  <footer>
-    <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. 翻译内容仅供学习交流使用。</p>
-  </footer>
+    <footer>
+      <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. 翻译内容仅供学习交流使用。</p>
+    </footer>
+  </div>
 </body>
 </html>

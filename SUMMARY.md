@@ -2,6 +2,7 @@
 layout: default
 title: 目录
 permalink: /SUMMARY.html
+hide_title: false
 ---
 
 # 目录

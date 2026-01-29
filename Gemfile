@@ -3,6 +3,8 @@
 source "https://rubygems.org"
 
 # 使用稳定的 Jekyll 版本
+# 注意：需要 Ruby 3.0+ 才能运行
+# 如果使用 Ruby 2.6，请升级 Ruby 或使用 Jekyll 3.8
 gem "jekyll", "~> 4.2"
 gem "minima", "~> 2.5"
 gem "jekyll-feed", "~> 0.12"

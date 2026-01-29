@@ -138,9 +138,26 @@ bundle exec jekyll serve
 # 访问 http://localhost:4000 查看网站
 ```
 
+### 电子书生成
+
+```bash
+# 一键设置电子书构建环境
+./scripts/setup-ebook-builder.sh
+
+# 生成 PDF、EPUB、MOBI 格式电子书
+cd build && make all
+```
+
+详细说明请查看 [EBOOK_BUILD.md](EBOOK_BUILD.md)
+
 ### 发布网站
 
-查看 [QUICK_START.md](QUICK_START.md) 了解快速发布步骤。
+```bash
+# 自动部署到 translation.wangyongqing.com/beyond-reading-science
+./scripts/deploy.sh
+```
+
+查看 [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md) 了解详细部署步骤。
 
 ## 📄 许可证
 

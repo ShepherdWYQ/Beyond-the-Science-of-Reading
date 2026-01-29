@@ -2,6 +2,7 @@
 layout: default
 title: Beyond the Science of Reading
 permalink: /chapters/Beyond-the-Science-of-Reading.html
+hide_title: false
 ---
 
 # Beyond the Science of Reading: Connecting Literacy Instruction to the Science of Learning

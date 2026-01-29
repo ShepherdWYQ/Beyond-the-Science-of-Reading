@@ -2,6 +2,7 @@
 layout: default
 title: 术语对照表
 permalink: /glossary.html
+hide_title: false
 ---
 
 # 术语对照表
