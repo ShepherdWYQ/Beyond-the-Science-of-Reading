@@ -86,7 +86,6 @@ OUTDATED_SCRIPTS=(
     "scripts/quick-deploy.sh"
     "scripts/test-fix.sh"
     "scripts/wait-and-configure.sh"
-    "scripts/generate-downloads.sh"
     "scripts/check-dns.sh"
     "scripts/test-domain.sh"
 )
@@ -185,9 +184,6 @@ cat > README.md << 'EOF'
 ### 在线阅读
 直接访问网站：https://beyond-reading-science.wangyongqing.com
 
-### 电子书下载
-访问下载页面：https://beyond-reading-science.wangyongqing.com/downloads/
-
 ### 本地开发
 ```bash
 # 安装依赖
@@ -209,7 +205,6 @@ bundle exec jekyll serve
 ├── _includes/           # 页面组件
 ├── _layouts/            # 页面布局
 ├── chapters/            # 翻译章节
-├── downloads/           # 电子书下载
 ├── build/               # 电子书构建系统
 ├── scripts/             # 部署脚本
 ├── SUMMARY.md           # 目录
@@ -244,9 +239,6 @@ Beyond-the-Science-of-Reading/
 ├── chapters/                   # 翻译章节
 │   ├── README.md               # 章节说明
 │   └── *.md                    # 各章节文件
-├── downloads/                  # 电子书下载
-│   ├── index.md                # 下载页面
-│   └── *.pdf/*.epub/*.mobi     # 电子书文件
 ├── build/                      # 电子书构建系统
 │   ├── build-ebooks.js         # 构建脚本
 │   ├── Makefile                # Make 配置

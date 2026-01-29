@@ -41,7 +41,6 @@
 - `scripts/quick-deploy.sh`
 - `scripts/test-fix.sh`
 - `scripts/wait-and-configure.sh`
-- `scripts/generate-downloads.sh`
 - `scripts/check-dns.sh`
 - `scripts/test-domain.sh`
 
@@ -59,7 +58,6 @@
 - `glossary.md` - 术语表
 - `progress.md` - 翻译进度
 - `chapters/` - 翻译章节
-- `downloads/` - 电子书下载
 
 ### 文档文件
 - `README.md` - 项目说明 (已精简)
@@ -86,7 +84,6 @@ Beyond-the-Science-of-Reading/
 ├── _includes/navigation.html   # 导航组件
 ├── _layouts/default.html       # 页面布局
 ├── chapters/                   # 翻译章节
-├── downloads/                  # 电子书下载
 ├── build/                      # 构建系统
 ├── scripts/                    # 核心脚本 (4个)
 ├── images/                     # 图片资源

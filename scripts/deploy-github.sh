@@ -117,14 +117,8 @@ build_ebooks() {
         node build-ebooks.js pdf || log_warning "PDF 生成失败"
         node build-ebooks.js epub || log_warning "EPUB 生成失败"
         
-        # 复制电子书到网站目录
-        if [[ -d "../dist" ]]; then
-            mkdir -p ../_site/downloads
-            cp -f ../dist/*.pdf ../_site/downloads/ 2>/dev/null || true
-            cp -f ../dist/*.epub ../_site/downloads/ 2>/dev/null || true
-            cp -f ../dist/*.mobi ../_site/downloads/ 2>/dev/null || true
-            log_success "电子书已复制到网站"
-        fi
+        # 电子书功能已移除
+        log_info "电子书功能已移除，跳过文件复制"
         
         cd ..
     else
@@ -168,79 +162,11 @@ verify_deployment() {
     fi
 }
 
-# 生成下载页面
-generate_downloads_page() {
-    log_info "生成下载页面..."
-    
-    mkdir -p downloads
-    
-    cat > downloads/index.md << 'EOF'
----
-layout: default
-title: 电子书下载
-permalink: /downloads/
----
-
-# 电子书下载
-
-《Beyond the Science of Reading: Connecting Literacy Instruction to the Science of Learning》中文翻译版电子书下载。
-
-## 📚 可用格式
-
-### PDF 格式
-- **适用于**: 电脑阅读、打印
-- **特点**: 完美排版、支持中文字体
-- [📄 下载 PDF](Beyond-the-Science-of-Reading.pdf)
-
-### EPUB 格式  
-- **适用于**: 手机、平板、电子书阅读器
-- **特点**: 响应式布局、自适应屏幕
-- [📱 下载 EPUB](Beyond-the-Science-of-Reading.epub)
-
-### MOBI 格式
-- **适用于**: Kindle 设备
-- **特点**: Kindle 原生支持
-- [📖 下载 MOBI](Beyond-the-Science-of-Reading.mobi)
-
-## 📖 阅读建议
-
-- **在线阅读**: 推荐使用本网站在线阅读，支持搜索和导航
-- **离线阅读**: 下载对应格式的电子书到设备
-- **打印阅读**: 使用 PDF 格式获得最佳打印效果
-
-## 🔄 更新说明
-
-电子书会随着翻译进度自动更新，建议定期下载最新版本。
-
-**最后更新**: {{ site.time | date: "%Y年%m月%d日" }}
-
-## 📝 版权说明
-
-本翻译项目遵循原书的许可证条款。翻译内容仅供学习交流使用。
-
----
-
-[← 返回首页]({{ site.baseurl }}/)
-EOF
-
-    log_success "下载页面已生成"
-}
+# 下载页面功能已移除
 
 # 更新导航菜单
 update_navigation() {
-    log_info "更新导航菜单..."
-    
-    # 更新 _config.yml 中的导航
-    if grep -q "downloads" _config.yml; then
-        log_info "导航菜单已包含下载链接"
-    else
-        # 在导航中添加下载链接
-        sed -i.bak '/- title: 术语表/a\
-  - title: 电子书下载\
-    url: /downloads/' _config.yml
-        
-        log_success "导航菜单已更新"
-    fi
+    log_info "导航菜单更新功能已移除，跳过"
 }
 
 # 主函数
@@ -256,7 +182,6 @@ main() {
     
     get_repo_info
     check_git_status
-    generate_downloads_page
     update_navigation
     build_jekyll
     build_ebooks
@@ -268,7 +193,6 @@ main() {
     echo
     echo -e "${BLUE}📍 网站地址:${NC}"
     echo "  🌐 主站: $GITHUB_PAGES_URL"
-    echo "  📚 下载: $GITHUB_PAGES_URL/downloads/"
     echo
     echo -e "${BLUE}📋 GitHub Pages 设置:${NC}"
     echo "  1. 访问 GitHub 仓库 Settings > Pages"

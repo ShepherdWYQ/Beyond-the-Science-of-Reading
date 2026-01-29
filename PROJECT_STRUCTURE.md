@@ -12,9 +12,6 @@ Beyond-the-Science-of-Reading/
 ├── chapters/                   # 翻译章节
 │   ├── README.md               # 章节说明
 │   └── *.md                    # 各章节文件
-├── downloads/                  # PDF下载
-│   ├── index.md                # 下载页面
-│   └── *.pdf                   # PDF文件
 ├── scripts/                    # 部署和工具脚本
 │   ├── deploy.sh               # 主部署脚本
 │   └── setup-subdomain.sh     # 子域名配置

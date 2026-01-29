@@ -116,8 +116,6 @@ navigation:
     url: /progress.html
   - title: 术语表
     url: /glossary.html
-  - title: 电子书下载
-    url: /downloads/
 EOF
 
 # 更新 CNAME 文件
@@ -326,7 +324,6 @@ cat > project-index-template/index.html << 'EOF'
                 </div>
                 <div class="project-links">
                     <a href="https://beyond-reading-science.wangyongqing.com/">📖 在线阅读</a>
-                    <a href="https://beyond-reading-science.wangyongqing.com/downloads/">📥 电子书下载</a>
                     <a href="https://github.com/ShepherdWYQ/Beyond-the-Science-of-Reading" class="secondary">💻 GitHub</a>
                 </div>
             </div>
