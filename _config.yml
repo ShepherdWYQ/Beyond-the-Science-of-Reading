@@ -14,13 +14,13 @@ plugins:
   - jekyll-seo-tag
 
 # Site settings
-# 子域名配置 - 根路径部署
-url: https://beyond-reading-science.wangyongqing.com
-baseurl: ""
+# GitHub Pages 默认配置
+url: https://ShepherdWYQ.github.io
+baseurl: /Beyond-the-Science-of-Reading
 
-# 备用配置
-# url: https://translation.wangyongqing.com
-# baseurl: /beyond-reading-science
+# 备用配置 - 自定义域名
+# url: https://beyond-reading-science.wangyongqing.com
+# baseurl: ""
 
 # Build settings
 markdown: kramdown
