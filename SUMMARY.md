@@ -2,12 +2,10 @@
 layout: default
 title: 目录
 permalink: /SUMMARY.html
-hide_title: false
+hide_title: true
 ---
 
 # 目录
-
-* [Beyond the Science of Reading](chapters/Beyond-the-Science-of-Reading.html)
 
 ## 前言部分
 
