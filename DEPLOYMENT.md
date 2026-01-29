@@ -4,7 +4,7 @@
 
 - **域名**: beyond-reading-science.wangyongqing.com
 - **部署方式**: GitHub Pages + 自定义域名
-- **构建系统**: Jekyll + 电子书自动生成
+- **构建系统**: Jekyll
 
 ## 🚀 快速部署
 
@@ -28,15 +28,3 @@
 ### GitHub Pages 设置
 - Custom domain: `beyond-reading-science.wangyongqing.com`
 - Enforce HTTPS: 启用
-
-## 📚 电子书构建
-
-```bash
-# 设置构建环境
-./scripts/setup-ebook-builder.sh
-
-# 生成电子书
-cd build && make all
-```
-
-详细说明请查看 [EBOOK_BUILD.md](EBOOK_BUILD.md)

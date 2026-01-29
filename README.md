@@ -18,7 +18,7 @@
 ### 在线阅读
 直接访问网站：https://beyond-reading-science.wangyongqing.com
 
-### 电子书下载
+### PDF下载
 访问下载页面：https://beyond-reading-science.wangyongqing.com/downloads/
 
 ### 本地开发
@@ -42,8 +42,7 @@ bundle exec jekyll serve
 ├── _includes/           # 页面组件
 ├── _layouts/            # 页面布局
 ├── chapters/            # 翻译章节
-├── downloads/           # 电子书下载
-├── build/               # 电子书构建系统
+├── downloads/           # PDF下载
 ├── scripts/             # 部署脚本
 ├── SUMMARY.md           # 目录
 ├── glossary.md          # 术语表

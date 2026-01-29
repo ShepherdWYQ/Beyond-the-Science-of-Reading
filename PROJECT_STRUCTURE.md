@@ -12,23 +12,18 @@ Beyond-the-Science-of-Reading/
 ├── chapters/                   # 翻译章节
 │   ├── README.md               # 章节说明
 │   └── *.md                    # 各章节文件
-├── downloads/                  # 电子书下载
+├── downloads/                  # PDF下载
 │   ├── index.md                # 下载页面
-│   └── *.pdf/*.epub/*.mobi     # 电子书文件
-├── build/                      # 电子书构建系统
-│   ├── build-ebooks.js         # 构建脚本
-│   ├── Makefile                # Make 配置
-│   └── styles/                 # 样式文件
+│   └── *.pdf                   # PDF文件
 ├── scripts/                    # 部署和工具脚本
 │   ├── deploy.sh               # 主部署脚本
-│   └── setup-ebook-builder.sh # 构建环境设置
+│   └── setup-subdomain.sh     # 子域名配置
 ├── images/                     # 图片资源
 ├── SUMMARY.md                  # 网站目录
 ├── glossary.md                 # 术语表
 ├── progress.md                 # 翻译进度
 ├── CONTRIBUTING.md             # 贡献指南
 ├── DEPLOYMENT.md               # 部署指南
-├── EBOOK_BUILD.md              # 电子书构建指南
 └── README.md                   # 项目说明
 ```
 
@@ -46,11 +41,9 @@ Beyond-the-Science-of-Reading/
 - `glossary.md`: 专业术语对照表
 
 ### 构建系统
-- `build/`: 电子书自动生成系统
 - `scripts/`: 部署和维护脚本
 
 ### 文档
 - `README.md`: 项目总览
 - `CONTRIBUTING.md`: 贡献指南
 - `DEPLOYMENT.md`: 部署说明
-- `EBOOK_BUILD.md`: 电子书构建指南
