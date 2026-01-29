@@ -14,11 +14,11 @@ plugins:
   - jekyll-seo-tag
 
 # Site settings
-# 部署到 translation.wangyongqing.com (根路径)
-url: https://translation.wangyongqing.com
+# 子域名配置 - 根路径部署
+url: https://beyond-reading-science.wangyongqing.com
 baseurl: ""
 
-# 子路径配置（如果需要可以启用）
+# 备用配置
 # url: https://translation.wangyongqing.com
 # baseurl: /beyond-reading-science
 

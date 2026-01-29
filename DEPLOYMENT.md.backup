@@ -174,7 +174,7 @@ bundle exec jekyll serve
 
 **解决方案**：
 - 检查 `_config.yml` 中的 `baseurl` 配置是否正确
-- 确保所有资源路径使用相对路径或 `` 变量
+- 确保所有资源路径使用相对路径或 `{{ site.baseurl }}` 变量
 
 ### 3. 404 错误
 

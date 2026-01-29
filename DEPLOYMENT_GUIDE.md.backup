@@ -84,7 +84,7 @@ translation.wangyongqing.com
 
 2. **CSS/JS 资源加载失败**
    - 检查 `_config.yml` 中的 `url` 和 `baseurl` 配置
-   - 确保所有链接使用 `` 前缀
+   - 确保所有链接使用 `{{ site.baseurl }}` 前缀
 
 3. **自定义域名不工作**
    - 检查 DNS 配置
