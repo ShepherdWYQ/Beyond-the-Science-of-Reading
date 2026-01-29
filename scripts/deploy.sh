@@ -140,8 +140,8 @@ verify_deployment() {
     sleep 10
     
     # 检查网站是否可访问
-    if curl -s -o /dev/null -w "%{http_code}" https://translation.wangyongqing.com/beyond-reading-science | grep -q "200"; then
-        log_success "网站部署成功: https://translation.wangyongqing.com/beyond-reading-science"
+    if curl -s -o /dev/null -w "%{http_code}" https://beyond-reading-science.wangyongqing.com | grep -q "200"; then
+        log_success "网站部署成功: https://beyond-reading-science.wangyongqing.com"
     else
         log_warning "网站可能还在构建中，请稍后检查"
         log_info "GitHub Pages 通常需要几分钟时间完成部署"
@@ -226,7 +226,7 @@ update_navigation() {
 # 主函数
 main() {
     echo -e "${BLUE}🚀 Beyond the Science of Reading - 部署脚本${NC}"
-    echo -e "${BLUE}目标地址: https://translation.wangyongqing.com/beyond-reading-science${NC}"
+    echo -e "${BLUE}目标地址: https://beyond-reading-science.wangyongqing.com${NC}"
     echo
     
     # 检查是否在项目根目录
@@ -247,14 +247,14 @@ main() {
     log_success "🎉 部署完成！"
     echo
     echo -e "${BLUE}📍 网站地址:${NC}"
-    echo "  🌐 主站: https://translation.wangyongqing.com/beyond-reading-science"
-    echo "  📚 下载: https://translation.wangyongqing.com/beyond-reading-science/downloads/"
+    echo "  🌐 主站: https://beyond-reading-science.wangyongqing.com"
+    echo "  📚 下载: https://beyond-reading-science.wangyongqing.com/downloads/"
     echo
     echo -e "${BLUE}📋 后续步骤:${NC}"
-    echo "  1. 确保域名 translation.wangyongqing.com DNS 指向 GitHub Pages"
-    echo "  2. 在 GitHub 仓库设置中配置自定义域名: translation.wangyongqing.com"
+    echo "  1. 确保域名 beyond-reading-science.wangyongqing.com DNS 指向 GitHub Pages"
+    echo "  2. 在 GitHub 仓库设置中配置自定义域名: beyond-reading-science.wangyongqing.com"
     echo "  3. 启用 HTTPS (GitHub Pages 自动配置)"
-    echo "  4. 网站将在 /beyond-reading-science 路径下访问"
+    echo "  4. 网站将在根路径下访问"
     echo
 }
 

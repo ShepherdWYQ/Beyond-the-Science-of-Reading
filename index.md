@@ -5,11 +5,7 @@ permalink: /
 hide_title: true
 ---
 
-# Beyond the Science of Reading: Connecting Literacy Instruction to the Science of Learning
-
-## 欢迎
-
-欢迎访问《Beyond the Science of Reading: Connecting Literacy Instruction to the Science of Learning》中文翻译项目网站。
+# 欢迎访问《Beyond the Science of Reading: Connecting Literacy Instruction to the Science of Learning》中文翻译项目网站
 
 ## 关于本书
 

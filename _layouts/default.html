@@ -19,17 +19,19 @@
       background-color: #f5f5f5;
     }
     .container {
-      max-width: 1200px;
-      margin: 0 auto;
+      width: 100%;
       background: white;
       min-height: 100vh;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
     header {
       background: #24292e;
       color: white;
-      padding: 20px 40px;
+      padding: 20px 5%;
       border-bottom: 3px solid #0366d6;
+    }
+    header .header-content {
+      max-width: 1400px;
+      margin: 0 auto;
     }
     header h1 {
       color: white;
@@ -56,11 +58,16 @@
       color: white;
     }
     main {
-      padding: 40px;
+      padding: 40px 5%;
+      background: #f8f9fa;
     }
     article {
-      max-width: 900px;
+      max-width: 1400px;
       margin: 0 auto;
+      background: white;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
     article h1 {
       color: #24292e;
@@ -104,20 +111,192 @@
       margin: 20px 0;
       color: #6a737d;
     }
-    footer {
-      background: #f6f8fa;
-      padding: 30px 40px;
-      text-align: center;
-      color: #666;
+    
+    /* 表格样式优化 */
+    article table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 25px 0;
+      font-size: 0.95em;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    
+    article table thead {
+      background: #24292e;
+      color: white;
+    }
+    
+    article table th {
+      padding: 15px 12px;
+      text-align: left;
+      font-weight: 600;
       font-size: 0.9em;
-      border-top: 1px solid #eaecef;
+      letter-spacing: 0.5px;
+    }
+    
+    article table td {
+      padding: 12px;
+      border-bottom: 1px solid #eaecef;
+      vertical-align: top;
+    }
+    
+    article table tbody tr {
+      transition: background-color 0.2s;
+    }
+    
+    article table tbody tr:hover {
+      background-color: #f8f9fa;
+    }
+    
+    article table tbody tr:nth-child(even) {
+      background-color: #fafbfc;
+    }
+    
+    article table tbody tr:nth-child(even):hover {
+      background-color: #f1f3f4;
+    }
+    
+    /* 状态标识样式 */
+    article table td:nth-child(3) {
+      font-weight: 500;
+    }
+    
+    /* 响应式表格 */
+    @media (max-width: 768px) {
+      article table {
+        font-size: 0.85em;
+      }
+      
+      article table th,
+      article table td {
+        padding: 8px 6px;
+      }
+      
+      article table th {
+        font-size: 0.8em;
+      }
+      
+      /* 隐藏不重要的列 */
+      article table th:nth-child(2),
+      article table td:nth-child(2) {
+        display: none;
+      }
+    }
+    
+    @media (max-width: 600px) {
+      article table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      
+      /* 在小屏幕上显示滚动提示 */
+      article table::after {
+        content: "← 左右滑动查看更多 →";
+        display: block;
+        text-align: center;
+        font-size: 0.8em;
+        color: #666;
+        padding: 10px;
+        background: #f8f9fa;
+        border-top: 1px solid #eaecef;
+      }
+    }
+    
+    /* 统计卡片响应式 */
+    @media (max-width: 768px) {
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .stats-grid {
+        grid-template-columns: 1fr !important;
+      }
+    }
+    
+    /* 内容区域优化 */
+    article h2 {
+      border-bottom: 1px solid #eaecef;
+      padding-bottom: 8px;
+    }
+    
+    article h3 {
+      color: #0366d6;
+    }
+    
+    /* 代码块样式 */
+    article code {
+      background: #f6f8fa;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-size: 0.9em;
+      color: #d73a49;
+    }
+    
+    /* 链接样式优化 */
+    article a {
+      color: #0366d6;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+    
+    article a:hover {
+      border-bottom-color: #0366d6;
+    }
+    
+    /* 分隔线样式 */
+    article hr {
+      border: none;
+      height: 2px;
+      background: linear-gradient(to right, #0366d6, transparent);
+      margin: 30px 0;
+    }
+    
+    footer {
+      background: #24292e;
+      padding: 30px 5%;
+      text-align: center;
+      color: #c9d1d9;
+      font-size: 0.9em;
+    }
+    
+    footer .footer-content {
+      max-width: 1400px;
+      margin: 0 auto;
     }
     @media (max-width: 768px) {
-      header, main, footer {
+      header .header-content,
+      main,
+      footer .footer-content {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      
+      header {
+        padding: 20px 20px;
+      }
+      
+      main {
         padding: 20px;
       }
+      
+      article {
+        padding: 20px;
+      }
+      
       nav ul {
         gap: 15px;
+      }
+      
+      footer {
+        padding: 20px;
       }
     }
   </style>
@@ -127,10 +306,12 @@
 <body>
   <div class="container">
     <header>
-      <h1><a href="/" style="color: white; text-decoration: none;">{{ site.title }}</a></h1>
-      <nav>
-        {% include navigation.html %}
-      </nav>
+      <div class="header-content">
+        <h1><a href="/" style="color: white; text-decoration: none;">{{ site.title }}</a></h1>
+        <nav>
+          {% include navigation.html %}
+        </nav>
+      </div>
     </header>
 
     <main>
@@ -143,7 +324,9 @@
     </main>
 
     <footer>
-      <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. 翻译内容仅供学习交流使用。</p>
+      <div class="footer-content">
+        <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. 翻译内容仅供学习交流使用。</p>
+      </div>
     </footer>
   </div>
 </body>

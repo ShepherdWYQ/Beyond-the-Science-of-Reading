@@ -2,6 +2,7 @@
 layout: default
 title: 引言
 permalink: /chapters/Introduction.html
+hide_title: true
 ---
 
 # 引言

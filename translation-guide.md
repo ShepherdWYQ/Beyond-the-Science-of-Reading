@@ -1,3 +1,10 @@
+---
+layout: default
+title: 翻译规范指南
+permalink: /translation-guide.html
+hide_title: true
+---
+
 # 翻译规范指南
 
 本文档详细说明了本翻译项目的翻译规范和注意事项。

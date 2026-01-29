@@ -2,6 +2,7 @@
 layout: default
 title: 致谢
 permalink: /chapters/Acknowledgments.html
+hide_title: true
 ---
 
 # 致谢

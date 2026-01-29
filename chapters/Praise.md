@@ -2,6 +2,7 @@
 layout: default
 title: 赞誉
 permalink: /chapters/Praise.html
+hide_title: true
 ---
 
 # 赞誉

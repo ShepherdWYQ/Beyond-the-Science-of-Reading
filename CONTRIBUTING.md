@@ -2,7 +2,7 @@
 layout: default
 title: 贡献指南
 permalink: /CONTRIBUTING.html
-hide_title: false
+hide_title: true
 ---
 
 # 贡献指南

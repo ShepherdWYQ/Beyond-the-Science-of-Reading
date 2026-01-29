@@ -30,7 +30,7 @@ log_info "推荐的多项目架构："
 echo "📚 beyond-reading-science.wangyongqing.com  # 本项目"
 echo "🔮 future-project-1.wangyongqing.com       # 未来项目1"
 echo "🔮 future-project-2.wangyongqing.com       # 未来项目2"
-echo "🏠 translation.wangyongqing.com            # 项目索引"
+echo "🏠 project-index.wangyongqing.com          # 项目索引"
 
 echo
 echo -e "${YELLOW}优点：${NC}"
@@ -401,10 +401,10 @@ echo "   访问: https://github.com/ShepherdWYQ/Beyond-the-Science-of-Reading/se
 echo "   Custom domain: beyond-reading-science.wangyongqing.com"
 echo
 echo "3. 🏠 项目索引页面："
-echo "   将 project-index-template/index.html 部署到 translation.wangyongqing.com"
+echo "   将 project-index-template/index.html 部署到 project-index.wangyongqing.com"
 echo
 echo "4. 🌐 访问地址："
-echo "   项目索引: https://translation.wangyongqing.com"
+echo "   项目索引: https://project-index.wangyongqing.com"
 echo "   本项目: https://beyond-reading-science.wangyongqing.com"
 echo
 echo -e "${YELLOW}💡 未来添加新项目：${NC}"

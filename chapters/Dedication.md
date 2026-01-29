@@ -2,6 +2,7 @@
 layout: default
 title: 献词
 permalink: /chapters/Dedication.html
+hide_title: true
 ---
 
 # 献词
